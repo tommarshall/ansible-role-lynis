@@ -29,10 +29,8 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
-  # Check to make sure the Lynis report runs and Lynis is latest version
-  - >
-    cd /opt/lynis && ./lynis -c --auditor "test" --cronjob
-    | grep -q '- Program update status...  [ NO UPDATE ]'
+  # Check to make sure the Lynis runs.
+  - cd /opt/lynis && sudo ./lynis -c --auditor "test" --cronjob
 
   # Check to make sure Lynis cron job is present.
   - "cat /etc/cron.d/lynis | grep -q 'Ansible: Run Lynis'"
