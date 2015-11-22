@@ -4,7 +4,7 @@
 lynis_version: 2.1.1
 lynis_version_sha256sum: d17b3cbbd305c52b9cd0d5141f41954882f398db44f26c10cb45fdaaa46a99d2
 
-lynis_src_directory: /usr/local/src/
+lynis_src_directory: /usr/local/src
 
 lynis_dest_directory: /opt
 
