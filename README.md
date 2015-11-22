@@ -32,7 +32,7 @@ The directory to hold the Lynis installation.
 ```yml
 lynis_log_directory: /var/log/lynis
 ```
-The directory for the Lynis logs. Used by the cron job. By Default Lynis will output the report to `stdout` and log to `/var/log/lynis.log` and `/var/log/lynis-report.dat`.
+The directory for the Lynis logs. Used by the cron job. By default Lynis will output the report to `stdout` and log to `/var/log/lynis.log` and `/var/log/lynis-report.dat`.
 
 ```yml
 lynis_cron: yes
