@@ -21,7 +21,7 @@
 
 - name: Copy Lynis to dest directory.
   shell: >
-    rsync --delete -ri --exclude="plugins/*"
+    rsync --delete -ri --links --exclude="plugins/*"
     {{ lynis_src_directory }}/lynis-{{ lynis_version }}/lynis/
     {{ lynis_dest_directory }}/lynis
     | awk '{print $1}' | grep -vE '..\.\..\.\.\.\.' | wc -l
