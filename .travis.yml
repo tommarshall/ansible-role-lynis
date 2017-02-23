@@ -34,3 +34,6 @@ script:
 
   # Check to make sure Lynis cron job is present.
   - "cat /etc/cron.d/lynis | grep -q 'Ansible: Run Lynis'"
+
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
