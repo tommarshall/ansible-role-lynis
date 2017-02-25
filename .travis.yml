@@ -30,7 +30,7 @@ script:
     || (echo 'Idempotence test: fail' && exit 1)
 
   # Check to make sure the Lynis runs.
-  - cd /opt/lynis && sudo ./lynis -c --auditor "test" --cronjob
+  - cd /opt/lynis && sudo ./lynis audit system --auditor "test" --cronjob
 
   # Check to make sure Lynis cron job is present.
   - "cat /etc/cron.d/lynis | grep -q 'Ansible: Run Lynis'"
