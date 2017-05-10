@@ -14,8 +14,8 @@ Role Variables
 --------------
 
 ```yml
-lynis_version: 2.4.4
-lynis_version_sha256sum: 771a25238c2b2aa92857096670463801149ce9e13b8d82c53dfe1cad2608316a
+lynis_version: 2.5.0
+lynis_version_sha256sum: af05f5e2474da29d5ad0921a67e422a9c4d6eddef40e64d8b218a309477de416
 ```
 The version and corresponding `sha256sum` of Lynis to install. Latest version and hash can be found on the [Lynis download page](https://cisofy.com/download/lynis/).
 
