@@ -36,6 +36,7 @@ The directory for the Lynis logs. Used by the cron job. By default Lynis will ou
 
 ```yml
 lynis_cron: yes
+lynis_cron_weekday: "*"
 lynis_cron_hour: 3
 lynis_cron_minute: 30
 ```
