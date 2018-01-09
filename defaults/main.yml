@@ -11,5 +11,6 @@ lynis_dest_directory: /opt
 lynis_log_directory: /var/log/lynis
 
 lynis_cron: yes
+lynis_cron_weekday: "*"
 lynis_cron_hour: 3
 lynis_cron_minute: 30
